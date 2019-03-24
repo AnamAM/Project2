@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "exampledb",
+    "password": "Minecraft420",
+    "database": "blood",
     "host": "localhost",
     "dialect": "mysql"
   },
