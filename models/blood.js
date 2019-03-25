@@ -3,5 +3,13 @@ module.exports = function(sequelize, DataTypes) {
     quantity: DataTypes.INTEGER,
     bloodType: DataTypes.STRING
   });
-  return Donor;
+  
+  Blood.associate = function(models) {
+    Blood.belongsTo(models.Donor, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+  return Blood;
 };

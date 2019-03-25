@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
     lastName: DataTypes.STRING,
     age: DataTypes.INTEGER,
     gender: DataTypes.STRING,
-    contactNumber: DataTypes.STRING
+    contactNumber: DataTypes.STRING,
     bloodType: DataTypes.STRING
   });
   return Donor;

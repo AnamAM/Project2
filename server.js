@@ -5,7 +5,7 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
-var PORT = process.env.PORT || 8080;
+var port = process.env.port || 8080;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -22,8 +22,10 @@ app.engine(
 app.set("view engine", "handlebars");
 
 // Routes
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("./routes/donor-Api.js")(app);
+require("./routes/schedule-Api.js")(app);
+require("./routes/htmlRoutes.js")(app);
+
 
 var syncOptions = { force: false };
 
@@ -35,7 +37,7 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
-  app.listen(PORT, function() {
+  app.listen(port, function() {
     console.log("Server is listening on http://localhost:" + port);
   });
 });
