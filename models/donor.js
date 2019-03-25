@@ -7,5 +7,12 @@ module.exports = function(sequelize, DataTypes) {
     contactNumber: DataTypes.STRING,
     bloodTypeID: DataTypes.INTEGER
   });
+  
+  // Donor.associate = function(models) {
+  //   Donor.hasMany(models.Blood, {
+  //     onDelete: "CASCADE"
+  //   });
+  // };
+
   return Donor;
 };
