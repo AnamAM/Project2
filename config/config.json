@@ -1,8 +1,14 @@
 {
   "development": {
     "username": "root",
+<<<<<<< HEAD
     "password": "Minecraft420",
     "database": "blood",
+=======
+    "port": 3306,
+    "password": "anam1996!",
+    "database": "clinic_db",
+>>>>>>> e2a14c33580406613a71daa51dcb1c3e03995907
     "host": "localhost",
     "dialect": "mysql"
   },
