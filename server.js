@@ -5,7 +5,7 @@ var exphbs = require("express-handlebars");
 var db = require("./models");
 
 var app = express();
-var port = process.env.port || 8080;
+var PORT = process.env.PORT || 8080;
 
 // Middleware
 app.use(express.urlencoded({ extended: false }));
@@ -37,8 +37,8 @@ if (process.env.NODE_ENV === "test") {
 
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function() {
-  app.listen(port, function() {
-    console.log("Server is listening on http://localhost:" + port);
+  app.listen(PORT, function() {
+    console.log("Server is listening on: http://localhost:" + PORT);
   });
 });
 
