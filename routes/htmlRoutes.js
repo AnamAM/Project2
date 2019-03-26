@@ -4,18 +4,17 @@ module.exports = function(app) {
   // Load index page
   app.get("/", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
+      res.render("index", {});
     });
   });
   app.get("/donor", function(req, res) {
     db.Example.findAll({}).then(function(dbExamples) {
-      res.render("donor", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
+      res.render("donor", {});
+    });
+  });
+  app.get("/schedule", function(req, res) {
+    db.Example.findAll({}).then(function(dbExamples) {
+      res.render("schedule", {});
     });
   });
 
