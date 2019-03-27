@@ -10,6 +10,7 @@ module.exports = function(app) {
   });
   
   app.post("/api/Donor", function(req, res) {
+    console.log(req.body)
     db.Donor.create(req.body).then(function(dbDonor) {
       res.json(dbDonor);
     });

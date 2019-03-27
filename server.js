@@ -27,7 +27,7 @@ require("./routes/schedule-Api.js")(app);
 require("./routes/htmlRoutes.js")(app);
 
 
-var syncOptions = { force: false };
+var syncOptions = { force: true };
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
