@@ -54,3 +54,15 @@
 .navbar {
 position: fixed;
 }
+
+.form-control {
+  width: 400px;
+  border-radius: auto;
+  margin: 0;
+  display: block;
+}
+
+.donor-info {
+  float: right;
+  
+}
