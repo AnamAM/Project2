@@ -4,10 +4,10 @@ module.exports = function(sequelize, DataTypes) {
     lastName: DataTypes.STRING,
     gender: DataTypes.STRING,
     age: DataTypes.INTEGER,
-    contactNumber: DataTypes.STRING,
-    bloodTypeID: DataTypes.INTEGER
+    contactNumber: DataTypes.INTEGER,
+    bloodType: DataTypes.STRING
   });
-  
+
   // Donor.associate = function(models) {
   //   Donor.hasMany(models.Blood, {
   //     onDelete: "CASCADE"
@@ -16,3 +16,6 @@ module.exports = function(sequelize, DataTypes) {
 
   return Donor;
 };
+
+
+

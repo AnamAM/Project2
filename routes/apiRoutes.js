@@ -9,8 +9,15 @@ module.exports = function(app) {
   });
 
   // Create a new example
-  app.post("/api/examples", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
+  app.post("/api/donor", function(req, res) {
+    db.Donor.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      gender: req.body.gender,
+      age: req.body.age,
+      contactNumber: req.body.contactNumber,
+      bloodTypeID: req.body.bloodTypeID
+    }).then(function(dbExample) {
       res.json(dbExample);
     });
   });
