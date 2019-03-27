@@ -13,9 +13,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/donor.html"));
    
   });
-  app.get("/", function(req, res) {
+  app.get("/login", function(req, res) {
 
-    res.sendFile(path.join(__dirname, "../public/donor.html"));
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+   
+  });
+  app.get("/admin", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/admin.html"));
    
   });
 
