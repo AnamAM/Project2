@@ -7,6 +7,14 @@ module.exports = function(sequelize, DataTypes) {
     contactNumber: DataTypes.STRING,
     bloodTypeID: DataTypes.STRING
   });
+
+  Donor.associate = function(models) {
+    // Associating Donor with Schedule
+    // When an Donor is deleted, also delete any associated Schedule
+    Donor.hasMany(models.Schedule, {
+      onDelete: "cascade"
+    });
+  };
   return Donor;
 };
 

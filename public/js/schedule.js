@@ -3,17 +3,19 @@ $(document).ready(function(){
     event.preventDefault();
     console.log('this worked')
     var newSchedule = {
-      date: $("#appt-date").val(),
-        time: $("#appt-time").val(),
-        city: $("#city").val(),
-        email: $("#email").val()
+      date: $("#what-date").val(),
+        time: $("#what-time").val(),
+        city: $("#what-city").val(),
+        email: $("#exampleInputEmail1").val()
       
       
     };
-    $("#appt-date").val("");
-    $("#appt-time").val("");
-    $("#city").val("");
-    $("#email").val("");
+    $("#what-date").val("");
+    $("#what-time").val("");
+    $("#what-city").val("");
+    $("#exampleInputEmail1").val("");
+    console.log(newSchedule.date);
+    console.log(newSchedule.time);
   console.log(newSchedule)
   $.ajax("/api/schedule", {
     type: "POST",
