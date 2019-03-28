@@ -25,7 +25,7 @@
 <body id="donor-page">
     <div id="donor-info">
         <h3>Register as a Blood Donor</h3>
-       <hr>
+        <hr>
         <form method="POST" role="form">
             <div class="form-group float-label-control">
                 <label for="">First Name</label>
@@ -37,7 +37,10 @@
             </div>
             <div class="form-group float-label-control">
                 <label for="">Gender</label>
-                <input id="gender" type="text" class="form-control">
+                <select class="form-control" id="gender">
+                    <option>Female</option>
+                    <option>Male</option>
+                </select>
             </div>
             <div class="form-group float-label-control">
                 <label for="">Age (Must be 17 or older)</label>
@@ -45,28 +48,54 @@
             </div>
             <div class="form-group float-label-control">
                 <label for="">Contact Number</label>
-                <input id="contactNumber" type="number" class="form-control">
+                <input id="contactNumber" type="text" class="form-control">
             </div>
             <div class="form-group">
-                    <label for="exampleFormControlSelect1">Select your Blood Type</label>
-                    <select class="form-control" id="bloodType">
-                      <option>O Rh-positive</option>
-                      <option>O Rh-negative</option>
-                      <option>A Rh-positive</option>
-                      <option>A Rh-negative</option>
-                      <option>B Rh-positive</option>
-                      <option>B Rh-negative</option>
-                      <option>AB Rh-positive</option>
-                      <option>AB Rh-negative</option>
-                    </select>
-                  </div>
-                  <button type="submit" id="donorSubmit" class="btn btn-dark"><a href="/schedule">Dark</a></button>
+                <label for="exampleFormControlSelect1">Select your Blood Type</label>
+                <select class="form-control" id="bloodType">
+                    <option>O Rh-positive</option>
+                    <option>O Rh-negative</option>
+                    <option>A Rh-positive</option>
+                    <option>A Rh-negative</option>
+                    <option>B Rh-positive</option>
+                    <option>B Rh-negative</option>
+                    <option>AB Rh-positive</option>
+                    <option>AB Rh-negative</option>
+                </select>
+            </div>
+            <!-- <button type="submit" id="donorSubmit" class="btn btn-primary"><a href="/schedule">Submit</a></button> -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">Submit</button>
         </form>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Your form has been successfully submitted.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Click below to make an appointment online or feel free to
+                    call us at 1 (800)-HAS-LIFE to make a donation and save a life!
+                </div>
+                <div class="modal-footer">
 
-    <script src="js/donor.js" type="text/javascript">
+                    <button type="submit" id="donorSubmit" class="btn btn-light"><i class="far fa-calendar-check"></i><a href="/schedule"> Make an Appointment</a></button>
+                    <button type="submit" id="donorClose" class="btn btn-light"><a href="/">Close</a></button>
 
-    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/donor.js" type="text/javascript"></script>
 </body>
 
 </html>
