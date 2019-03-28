@@ -23,7 +23,7 @@ $(document).ready(function(){
   $.ajax("/api/donor", {
     type: "POST",
     data: newDonor,
-    success: function() { window.location.href="/schedule"; }
+    // success: function() { window.location.href="/"; }
   }).then(function(req, res) {
       console.log("created new Donor!!");
       // Reload the page to get the updated list
