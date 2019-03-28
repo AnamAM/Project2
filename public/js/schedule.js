@@ -1,28 +1,23 @@
 $(document).ready(function(){
-  $("#donorSubmit").on("click", function(event){
+  $("#submitSch").on("click", function(event){
     event.preventDefault();
     console.log('this worked')
     var newSchedule = {
-      firstName: $("#fname").val(),
-      lastName: $("#lname").val().trim(),
-      gender: $("#gender").val().trim(),
-      age: parseInt($("#age").val().trim()),
-      contactNumber: $("#contactNumber").val().trim(),
-      bloodTypeID: $("#bloodType").val().trim()
-
+      date: $("#appt-date").val(),
+        time: $("#appt-time").val(),
+        city: $("#city").val(),
+        email: $("#email").val()
+      
       
     };
-  $("#fname").val("");
-  $("#lname").val("");
-  $("#gender").val("");
-  $("#age").val("");
-  $("#contactNumber").val("");
-  $("#bloodType").val("");
-  
+    $("#appt-date").val("");
+    $("#appt-time").val("");
+    $("#city").val("");
+    $("#email").val("");
   console.log(newSchedule)
   $.ajax("/api/schedule", {
     type: "POST",
-    data: newDonor,
+    data: newSchedule,
   }).then(function(req, res) {
       console.log("created schedule!!");
       // Reload the page to get the updated list
