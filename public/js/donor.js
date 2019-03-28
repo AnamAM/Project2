@@ -22,16 +22,13 @@ $(document).ready(function(){
   console.log(newDonor)
   $.ajax("/api/donor", {
     type: "POST",
-    data: newDonor
+    data: newDonor,
+    success: function() { window.location.href="/schedule"; }
   }).then(function(req, res) {
       console.log("created new Donor!!");
       // Reload the page to get the updated list
       // location.reload();
     }
-    );
-    
+    );    
   })
-
-
 })
-
