@@ -27,6 +27,7 @@ module.exports = function(app) {
   app.get("/donor", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/donor.html"));
   });
+  
   app.get("/schedule", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/schedule.html"));
   });
@@ -41,4 +42,3 @@ module.exports = function(app) {
    
   });
 }
-

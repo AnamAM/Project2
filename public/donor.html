@@ -63,52 +63,33 @@
                     <option>AB Rh-negative</option>
                 </select>
             </div>
-            <button type="button" id="donorSubmit" class="btn btn-light" data-toggle="modal"
-                data-target="#exampleModalCenter">Submit</button>
+            <!-- <button type="submit" id="donorSubmit" class="btn btn-primary"><a href="/schedule">Submit</a></button> -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal"
+                data-target="#exampleModal">Submit</button>
         </form>
     </div>
-
-    <!-- modal for scheduling an appointment starts here -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Schedule a Date and Time</h5>
+                    <h5 class="modal-title text-center" id="exampleModalLabel">Your form has been successfully submitted.</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="container">
-                        <form>
-                            <label for="choosedate">Appointment Date</label>
-                            <input type="date" name="choosedate" id="what-date">
-                            <br>
-                            <br>
-                            <label for="choosetime">Appointment Time</label>
-                            <input type="time" name="choosetime" id="what-time">
-                            <br>
-                            <br>
-                            <div class="form-group">
-                                <label for="exampleFormControlSelect1">Choose a City</label>
-                                <select class="form-control" id="what-city">
-                                    <option>Houston</option>
-                                    <option>Austin</option>
-                                    <option>San Antonio</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email Address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1"
-                                    aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">Your email is secure with us.</small>
-                            </div>
-                        </form>
-                    </div>
+                    Click below to make an appointment online or feel free to
+                    call us at 1 (800)-HAS-LIFE to make a donation and save a life!
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary"><a href="/">Submit</a></button>
+
+                    <button type="submit" id="donorSubmit" class="btn btn-light"><i class="far fa-calendar-check"></i><a href="/schedule"> Make an Appointment</a></button>
+                    <button type="submit" id="donorClose" class="btn btn-light"><a href="/">Close</a></button>
+
                 </div>
             </div>
         </div>

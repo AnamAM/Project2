@@ -9,7 +9,11 @@ module.exports = function(sequelize, DataTypes) {
       type: 'TIMESTAMP',
       defaultValue:sequelize.literal('CURRENT_TIMESTAMP'),
       allowNull:false
-    }
+    },
+    date: DataTypes.STRING,
+    time: DataTypes.STRING,
+    city: DataTypes.STRING,
+    email: DataTypes.STRING
   })
   
   Schedule.associate = function(models) {
