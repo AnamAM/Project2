@@ -1,5 +1,65 @@
-.list-group-item {
+/* .list-group-item {
   line-height: 2.5;
+} */
+
+.marketing-site-hero {
+  background: url("savesHeader.jpg") top right no-repeat;
+  color: white;
+  height: 65vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero-content {
+    padding-left: 50%;
+  }
+}
+
+
+
+.col-sm{
+  text-align: center;
+}
+
+.fas{
+  color: red;
+  font-size: 40px;
+}
+
+/* donor page background */
+
+.donorBack{
+  background-image: linear-gradient(red, white)
 }
 
 .landing-page {
