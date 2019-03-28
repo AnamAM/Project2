@@ -30,5 +30,15 @@ module.exports = function(app) {
   app.get("/schedule", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/schedule.html"));
   });
+  app.get("/login", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+   
+  });
+  app.get("/admin", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/admin.html"));
+   
+  });
 }
 
