@@ -50,11 +50,10 @@ module.exports = function(app) {
     res.render("404");
 
   });
+
   app.get("/donor", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/donor.html"));
   });
-
-
 }
 
  
