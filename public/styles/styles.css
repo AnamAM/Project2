@@ -54,3 +54,33 @@
 .navbar {
 position: fixed;
 }
+
+.form-control {
+  width: 400px;
+  border-radius: auto;
+  margin: 0;
+  display: block;
+}
+
+#donor-info {
+   /* width: 150px; */
+   position: absolute;
+   margin-top: 70px;
+   padding: 40px;
+   /* top: 0px; */
+   /* left: 25%; */
+   /* margin-bottom: 10px; */
+   margin-left: 37%;
+   background-color: antiquewhite;
+   position: absolute;
+   transform-style: preserve-3d;
+}
+
+#fname, #lname, #gender, #age, #contactNumber, #bloodType {
+  width: 300px;
+}
+
+#donor-page {
+  background-color: #ffdcdb;
+background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
+}
