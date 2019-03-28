@@ -3,7 +3,7 @@
     "username": "root",
     "port": 3306,
     "password": "Minecraft420",
-    "database": "clinic_db",
+    "database": "clin_db",
     "host": "localhost",
     "dialect": "mysql"
   },

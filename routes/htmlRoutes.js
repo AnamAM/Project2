@@ -13,11 +13,11 @@ module.exports = function(app) {
   app.get("/help", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/help.html"));
   });
-  app.get("/schedule", function(req, res) {
+  // app.get("/schedule", function(req, res) {
 
-    res.sendFile(path.join(__dirname, "../public/schedule.html"));
+  //   res.sendFile(path.join(__dirname, "../public/schedule.html"));
    
-  });
+  // });
 
 
   app.get("/locations", function(req, res) {
