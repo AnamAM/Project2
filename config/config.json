@@ -1,6 +1,7 @@
 {
   "development": {
     "username": "root",
+    "port": 3306,
     "password": "Hasanain1997",
     "database": "clinic_db",
     "host": "localhost",
