@@ -319,3 +319,20 @@ input {
 .SanMap{
   margin-left: 7%;
 }
+/* style="top: 10px; left: 75px; width:210px; height:220px" */
+
+.HoustonMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+.AustinMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+.SanAntonioMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
