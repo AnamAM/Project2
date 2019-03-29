@@ -25,4 +25,8 @@ module.exports = function(app) {
   app.get("/schedule", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/schedule.html"));
   });
-}
+  
+};
+
+
+

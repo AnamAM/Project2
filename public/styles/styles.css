@@ -71,7 +71,7 @@
   position: relative;
   width: 100vw;
   height: 50vh;
-  opacity: 0.50;
+  opacity: 0.60;
   /* min-height: 35rem; */
   /* padding: 15rem 0; */
   background-position: center;
@@ -82,19 +82,13 @@
   font-weight: bolder;
   margin-top: 5%;
 }
-
-.whole-about {
-  width: 100vw;
-  height: 100vh;
-}
-
 #mission {
   padding-top: 40px;
   color: black;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: bolder;
   letter-spacing: .025em;
 }
 
@@ -103,8 +97,8 @@
   color: black;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: bold;
   letter-spacing: .025em;
 }
 
@@ -230,10 +224,10 @@ input {
 
 #pulsingheart { 
   position: relative; 
-  width: 100px; 
-  height: 100px;
-  margin-left: 15%;
-  margin-top: 15%;
+  width: 200px; 
+  height: 200px;
+  margin-left: 25%;
+  margin-top: 25%;
 } 
 
 #pulsingheart:before, #pulsingheart:after { 
@@ -301,3 +295,4 @@ input {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+
