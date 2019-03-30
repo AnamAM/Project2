@@ -19,7 +19,11 @@
     "foundation-sites": "^6.5.3",
     "mysql": "^2.16.0",
     "mysql2": "^1.5.3",
+<<<<<<< HEAD
     "nodemailer": "^6.0.0",
+=======
+    "node-mandrill": "^1.0.1",
+>>>>>>> 494608e31432c23422576169321cdf9bfc1c238c
     "sequelize": "^4.43.0"
   },
   "devDependencies": {

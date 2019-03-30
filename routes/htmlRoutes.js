@@ -13,6 +13,12 @@ module.exports = function(app) {
   app.get("/help", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/help.html"));
   });
+  // app.get("/schedule", function(req, res) {
+
+  //   res.sendFile(path.join(__dirname, "../public/schedule.html"));
+   
+  // });
+
 
   app.get("/locations", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/locations.html"));
@@ -25,8 +31,22 @@ module.exports = function(app) {
   app.get("/schedule", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/schedule.html"));
   });
+<<<<<<< HEAD
   
 };
 
 
 
+=======
+  app.get("/login", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+   
+  });
+  app.get("/admin", function(req, res) {
+
+    res.sendFile(path.join(__dirname, "../public/admin.html"));
+   
+  });
+}
+>>>>>>> 494608e31432c23422576169321cdf9bfc1c238c
