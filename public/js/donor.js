@@ -26,8 +26,6 @@ $(document).ready(function () {
       success: function() { window.location.href="/schedule"; }
     }).then(function (req, res) {
       console.log("Created new Donor!!");
-      // Reload the page to get the updated list
-      // location.reload();
     }
     );
   });
