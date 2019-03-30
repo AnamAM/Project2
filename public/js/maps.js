@@ -11,7 +11,7 @@
 
 
 function initialize() {
-    var latlng = new google.maps.LatLng(29.7604,-95.3698);
+    var latlng = new google.maps.LatLng(29.729740,-95.548190);
     var latlng2 = new google.maps.LatLng(30.2672,-97.7431);
     var latlng3 = new google.maps.LatLng(29.4241,-98.4936);
     var myOptions = {
