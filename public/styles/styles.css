@@ -307,20 +307,6 @@ input {
 
 /* working with google map api below */
 
-/* Set the size of the div element that contains the map */
-#map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
-}
-
-.AusMap{
-  margin-left: 7%;
-}
-.SanMap{
-  margin-left: 7%;
-}
-/* style="top: 10px; left: 75px; width:210px; height:220px" */
-
 .HoustonMap{
   width: 400px;
   height: 400PX;
