@@ -3,8 +3,9 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 var bodyParser = require("body-parser");
 var nodemailer = require("nodemailer");
-
+var moment = require('moment');
 var db = require("./models");
+// const anime = require('lib/anime.js');
 
 var app = express();
 var PORT = process.env.PORT || 8080;
@@ -30,7 +31,7 @@ let mailOptions = {
     from: "h.a.s.bloodclinic@gmail.com",
     to: req.body.email,
     subject: "Confirmation Email",
-    html: "<h3>Your appointment is scheduled for " + req.body.date + " at " + req.body.time + "! We'll be looking forward to seeing you soon. Thank you for your service!</h3>"
+    html: "<h3>Your appointment is scheduled for " + moment(req.body.date).format('llll') + " at " + req.body.time + "! We'll be looking forward to seeing you soon. Thank you for your service!</h3>"
 };
 
 transporter.sendMail(mailOptions, function(err, data) {
@@ -47,7 +48,6 @@ app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
 require("./routes/donor-Api.js")(app);
-// require("./routes/schedule-Api.js")(app);
 require("./routes/htmlRoutes.js")(app);
 
 var syncOptions = { force: true };
