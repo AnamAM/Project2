@@ -46,7 +46,7 @@
 }
 
 .landing-page {
-  background-image: url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   /* -webkit-filter: grayscale(100%); 
   filter: grayscale(100%); */
   position: relative;
@@ -71,7 +71,7 @@
   position: relative;
   width: 100vw;
   height: 50vh;
-  opacity: 0.50;
+  opacity: 0.60;
   /* min-height: 35rem; */
   /* padding: 15rem 0; */
   background-position: center;
@@ -83,18 +83,13 @@
   margin-top: 5%;
 }
 
-.whole-about {
-  width: 100vw;
-  height: 100vh;
-}
-
 #mission {
   padding-top: 40px;
   color: black;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 36px;
-  font-weight: 400;
+  font-weight: bolder;
   letter-spacing: .025em;
 }
 
@@ -103,8 +98,8 @@
   color: black;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 40px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: bold;
   letter-spacing: .025em;
 }
 
@@ -115,6 +110,7 @@
   margin-left: 30%;
   margin-bottom: 20px;
 }
+
 /* this is the police office giving blood pic, use for community help section */
 /* background-image: url("https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
 
@@ -156,7 +152,6 @@ position: fixed;
    margin-left: 37%;
    background-color: white;
 }
-
 
 #fname, #lname, #gender, #age, #contactNumber, #bloodType {
   width: 300px;
@@ -230,10 +225,10 @@ input {
 
 #pulsingheart { 
   position: relative; 
-  width: 100px; 
-  height: 100px;
-  margin-left: 15%;
-  margin-top: 15%;
+  width: 200px; 
+  height: 200px;
+  margin-left: 25%;
+  margin-top: 25%;
 } 
 
 #pulsingheart:before, #pulsingheart:after { 
@@ -300,4 +295,84 @@ input {
   animation-duration: 1.3s;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+}
+
+button{
+  background: blue;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+#help-page {
+  /* background-image: url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"); */
+    /* -webkit-filter: grayscale(100%);  */
+  /* filter: grayscale(100%); */
+  /* -webkit-font-smoothing: antialiased; */
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #0b2279;
+  font-weight: bolder;
+  margin-top: 5%;
+  color: white;
+  font-size: 30pt;
+  padding-top: 110px;
+}
+
+.modal{
+  width: 90%;
+}
+
+/* working with google map api below */
+.HoustonMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+
+.AustinMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+
+.SanAntonioMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
 }

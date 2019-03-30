@@ -13,8 +13,6 @@ $(document).ready(function () {
     $("#appt-time").val("");
     $("#city").val("");
     $("#email").val("");
-    console.log(newSchedule.date);
-    console.log(newSchedule.time);
     console.log(newSchedule);
     $.ajax("/api/schedule", {
       type: "POST",
@@ -26,6 +24,7 @@ $(document).ready(function () {
       // location.reload();
     }
     );
+    
   })
 
 
