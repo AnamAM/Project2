@@ -21,8 +21,8 @@ app.post("/api/schedule", function(req, res) {
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-        user: "h.a.s.bloodclinic@gmail.com",
-        pass: "hasblood"
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD
     }
 });
 
