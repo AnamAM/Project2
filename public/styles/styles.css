@@ -301,3 +301,24 @@ input {
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+.modal{
+  width: 90%;
+}
+
+/* working with google map api below */
+
+.HoustonMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+.AustinMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
+.SanAntonioMap{
+  width: 400px;
+  height: 400PX;
+  margin-left: 7%
+}
