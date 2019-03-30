@@ -82,6 +82,7 @@
   font-weight: bolder;
   margin-top: 5%;
 }
+
 #mission {
   padding-top: 40px;
   color: black;
@@ -109,6 +110,7 @@
   margin-left: 30%;
   margin-bottom: 20px;
 }
+
 /* this is the police office giving blood pic, use for community help section */
 /* background-image: url("https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
 
@@ -150,7 +152,6 @@ position: fixed;
    margin-left: 37%;
    background-color: white;
 }
-
 
 #fname, #lname, #gender, #age, #contactNumber, #bloodType {
   width: 300px;
@@ -341,9 +342,6 @@ button:hover:before,button:hover:after{
   position: relative;
   width: 100vw;
   height: 50vh;
-  /* opacity: 0.60; */
-  /* min-height: 35rem; */
-  /* padding: 15rem 0; */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -352,23 +350,27 @@ button:hover:before,button:hover:after{
   font-weight: bolder;
   margin-top: 5%;
   color: white;
+  font-size: 30pt;
+  padding-top: 110px;
 }
+
 .modal{
   width: 90%;
 }
 
 /* working with google map api below */
-
 .HoustonMap{
   width: 400px;
   height: 400PX;
   margin-left: 7%
 }
+
 .AustinMap{
   width: 400px;
   height: 400PX;
   margin-left: 7%
 }
+
 .SanAntonioMap{
   width: 400px;
   height: 400PX;
