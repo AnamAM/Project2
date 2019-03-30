@@ -2,8 +2,8 @@
   "development": {
     "username": "root",
     "port": 3306,
-    "password": "Minecraft420",
-    "database": "clin_db",
+    "password": "anam1996!",
+    "database": "clinic_db",
     "host": "localhost",
     "dialect": "mysql"
   },
