@@ -119,14 +119,13 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* opacity: 0.70; */
   min-height: 35rem;
+  margin-bottom: 40px;
   padding: 15rem 0;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  /* color: white; */
 }
 
 .navbar {
@@ -197,12 +196,6 @@ background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.p
   opacity: 0;
 }
 
-/* custom styles */
-/* body {
-  padding: 4em;
-  background: #e5e5e5;
-  font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-} */
 label {
   display: block;
 }
@@ -358,7 +351,6 @@ button:hover:before,button:hover:after{
   width: 90%;
 }
 
-/* working with google map api below */
 .HoustonMap{
   width: 400px;
   height: 400PX;

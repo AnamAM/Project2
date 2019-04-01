@@ -14,18 +14,13 @@ $(document).ready(function () {
     $("#city").val("");
     $("#email").val("");
     console.log(newSchedule);
-    $.ajax("/api/schedule", {
+    $.ajax("/api/Schedule", {
       type: "POST",
       data: newSchedule,
       success: function() { window.location.href="/"; }
     }).then(function (req, res) {
       console.log("created schedule!!");
-      // Reload the page to get the updated list
-      // location.reload();
     }
     );
-    
   })
-
-
 })

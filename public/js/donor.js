@@ -20,14 +20,12 @@ $(document).ready(function () {
     $("#bloodType").val("");
 
     console.log(newDonor)
-    $.ajax("/api/donor", {
+    $.ajax("/api/Donor", {
       type: "POST",
       data: newDonor,
       success: function() { window.location.href="/schedule"; }
     }).then(function (req, res) {
       console.log("Created new Donor!!");
-      // Reload the page to get the updated list
-      // location.reload();
     }
     );
   });
@@ -53,7 +51,7 @@ $(document).ready(function () {
     $("#bloodType").val("");
 
     console.log(newDonor)
-    $.ajax("/api/donor", {
+    $.ajax("/api/Donor", {
       type: "POST",
       data: newDonor,
       success: function() { window.location.href="/"; }

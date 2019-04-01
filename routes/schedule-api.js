@@ -2,9 +2,9 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.json(dbExamples);
+  app.get("/api/Schedule", function(req, res) {
+    db.Example.findAll({}).then(function(dbSchedule) {
+      res.json(dbSchedule);
     });
   });
 
@@ -17,8 +17,8 @@ module.exports = function(app) {
       age: req.body.age,
       contactNumber: req.body.contactNumber,
       bloodTypeID: req.body.bloodTypeID
-    }).then(function(dbExample) {
-      res.json(dbExample);
+    }).then(function(dbSchedule) {
+      res.json(dbSchedule);
     });
   });
 

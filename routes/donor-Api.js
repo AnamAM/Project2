@@ -16,4 +16,15 @@ module.exports = function(app) {
       // res.redirect('/schedule');
     });
   });
+
+  app.delete("/api/donor/:id", function(req, res) {
+    db.Donor.destroy({
+      where: {
+        id: req.params.id
+      }
+    }).then(function(dbDonor) {
+      res.json(dbDonor);
+    });
+  });
+
 };

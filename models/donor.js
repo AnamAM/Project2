@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
   });
   Donor.associate = function(models) {
     Donor.hasMany(models.Schedule, {
-      onDelete: "CASCADE"
+      onDelete: "cascade"
     });
   };
   return Donor;
