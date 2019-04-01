@@ -29,21 +29,21 @@ function initialize() {
     {
         position: latlng,
         map: map,
-        title:"Pune"
+        title:"Houston"
    });
 
     var myMarker2 = new google.maps.Marker(
     {
         position: latlng2,
         map: map2,
-        title:"Noida"
+        title:"Austin"
     });
 
     var myMarker3 = new google.maps.Marker(
     {
         position: latlng3,
         map: map3,
-        title:"Noida"
+        title:"San Antonio"
     });
 }
 
