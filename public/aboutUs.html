@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en PUBLIC">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,8 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" media="screen" title="no title">
 </head>
@@ -32,22 +34,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown link-one">
-                                <a class="nav-link dropdown-toggle js-scroll-trigger" href="/aboutUs" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <li class="nav-item dropdown1 link-one">
+                                <a class="nav-link dropdown-toggle js-scroll-trigger" href="/aboutUs"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
                                     About Us
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu menu1" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/aboutUs">Our Mission</a>
                                     <a class="dropdown-item" href="/aboutUs">Our Team</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown link-two">
+                            <li class="nav-item dropdown2 link-two">
                                 <a class="nav-link dropdown-toggle js-scroll-trigger" href="/help" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community
-                                    Help
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get
+                                    Involved
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu menu2" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/help">Volunteer</a>
                                     <a class="dropdown-item" href="/help">Host a Blood Drive</a>
                                     <a class="dropdown-item" href="/help">Donate Money</a>
@@ -66,13 +69,22 @@
 
         <section class="about-section text-center" id="about-us">
             <div class="container">
-                <h1 class="animated fadeInDownBig" id="mission1">OUR MISSION</h1>
+                <h1 class="animated zoomInDown slow" style="font-size: 44pt" id="mission1">OUR MISSION</h1>
                 <br>
                 <hr>
+<<<<<<< HEAD
                 <h3 class="animated fadeInUpBig" id="mission">Providing service and protecting our people since 2014</h3>
                 <div class="row">
 
                 </div>
+=======
+                <h3 class="animated zoomInUp slow" style="font-size: 30pt" id="mission">Providing service and protecting
+                    our people since 2014
+                </h3>
+                <!-- <div class="row">
+
+                </div> -->
+>>>>>>> fccd23fd2d59b288669113033646265f2df581bc
             </div>
         </section>
         <div class="row">
@@ -90,8 +102,46 @@
             </div>
         </div>
     </div>
+<br>
+<br>
+<br>
+    <section class="our-team">
+        <h2 class="text-center">Our Team Administrators</h2>
+        <br>
+        <div class="row team-pics">
+            <div class="col-md-3">
+                <div class="card hasanain" style="width: 18rem;">
+                    <img src="./images/IMG_6302.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Hasanain Mohammed</h5>
+                        <h6 class="card-title text-center">Co-Founder</h6>
+                        <p class="card-text">He is a full stack web developer who loves to take on challenges. His family will tell you that he enjoys traveling and trying new foods. His humorous personality makes everybody appreciate his company. His motive is to wake up everyday with positivity and always go one step futher in life.</p>
+                    </div>
+                </div>
+            </div>
 
-
+            <div class="col-sm-3">
+                <div class="card anam" style="width: 18rem;">
+                    <img src="./images/IMG_6777.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Anam Mohammad</h5>
+                        <h6 class="card-title text-center">Co-Founder</h6>
+                        <p class="card-text">She is a full stack web developer who aspires to travel the world. In her free time, you will find her watching make-up videos and online shopping. Her family will tell you that she has a nuturing personality which shows people how warmhearted she is. Her biggest life lesson is to never give no matter what happens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card skylar" style="width: 18rem;">
+                    <img src="./images/IMG_1925.JPG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Skylar Piper</h5>
+                        <h6 class="card-title text-center">Co-Founder</h6>
+                        <p class="card-text">He is an entrepreneur who knows that success does not come easily. Growing up, he always liked to do things with his hands; tinker, build, take apart, break, you name it. His parents would tell you that this never changed as he still tinkers with everything; but, to him it is about figuring out how things work and finding a way to make them work better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script type="text/javascript">
 

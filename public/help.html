@@ -31,23 +31,23 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item dropdown link-one">
+                            <li class="nav-item dropdown1 link-one">
                                 <a class="nav-link dropdown-toggle js-scroll-trigger" href="/aboutUs"
                                     id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
                                     About Us
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu menu1" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/aboutUs">Our Mission</a>
                                     <a class="dropdown-item" href="/aboutUs">Our Team</a>
                                 </div>
                             </li>
-                            <li class="nav-item dropdown link-two">
+                            <li class="nav-item dropdown2 link-two">
                                 <a class="nav-link dropdown-toggle js-scroll-trigger" href="/help" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">Community Help
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get
+                                    Involved
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu menu2" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="/help">Volunteer</a>
                                     <a class="dropdown-item" href="/help">Host a Blood Drive</a>
                                     <a class="dropdown-item" href="/help">Donate Money</a>
@@ -63,13 +63,95 @@
         </header>
     </div>
 
-    <section class="text-center" id="help-page">
-
-        Working hand in hand since 2014
-        
+    <section class="section section-dark" id="help-page">
+        <h2 class="animated flip" style="margin-top:25px; letter-spacing:.5rem;">Working hand in hand since 2014</h2>
     </section>
 
-    <script type="text/javascript"></script>
+    <div class="image1"></div>
+    <section class="section section-light">
+        <h2>Volunteer</h2>
+        <p>When you volunteer at H.A.S. Clinic, you are a vital part of helping to ensure that everyone has access to
+            life-saving blood when they need it. H.A.S Clinic volunteers are essential to our mission because volunteers
+            make it possible for us to provide and protect the community blood supply, to inspire our community to
+            continue to save lives locally, and to always treat everyone we serve as family.</p>
+        <p>If you are interested in vounteering at H.A.S. Clinic, please fill out the volunteer application form below.
+        </p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Application
+            Form</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">H.A.S. Clinic Volunteering</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="" id="volunteer-form">Full Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" id="volunteer-form">Mailing Address</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" id="volunteer-form">Contact Information</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="" id="volunteer-form">Age</label>
+                            <input type="text" class="form-control">
+                            <small class="form-text text-muted" style="text-align: left">The minimum age for volunteering is 16.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="" id="volunteer-form">Email</label>
+                            <input type="text" class="form-control">
+                            <small class="form-text text-muted" style="text-align: left">We will email you for your availability.</small>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary"><a href="/help"> Submit Form</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="image2"></div>
+    <section class="section section-dark">
+        <h2>Host a Blood Drive</h2>
+        <p>The local blood supply is a shared community resource that bonds us all. H.A.S Blood Clinic is the only truly
+            local blood services provider. And having a thriving local blood supply ensures that the people you see
+            every day, the people you care about the most—family, friends, neighbors, coworkers—always have access to
+            life-saving blood when they need it.</p>
+        <p>To join the cause and the family by hosting a blood drive, call us at 1 (800)-HAS-LIFE or shoot us an <a
+                href="mailto:h.a.s.bloodclinic@gmail.com?subject=Hosting a Blood Drive">email</a>. It’s that easy!
+            <br>
+        </p>
+    </section>
+
+    <div class="image3"></div>
+    <section class="section section-light">
+        <h2>Donate Money</h2>
+        <p>Whether you are a blood donor who wants to do more, or you are not eligible to donate blood but want to
+            support our life-saving mission, your financial support will help ensure that quality blood products will
+            always be available for every patient in need. As a non-profit organization, we depend on charitable giving
+            to provide for service improvements that cannot always be fully funded otherwise.</p>
+        <p>For more information regarding any sort of donation, please contact us through our <a
+                href="mailto:h.a.s.bloodclinic@gmail.com?subject=Donation">email</a>.
+            <br>
+        </p>
+    </section>
+
+</body>
+
+</html>
+
+<script type="text/javascript"></script>
 </body>
 
 </html>
