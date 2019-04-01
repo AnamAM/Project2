@@ -17,11 +17,20 @@ $(document).ready(function () {
     $.ajax("/api/schedule", {
       type: "POST",
       data: newSchedule,
-      success: function() { window.location.href="/"; }
+      // success: function() { window.location.href="/"; }
     }).then(function (req, res) {
       console.log("created schedule!!");
     }
     );
   })
+
+  $("#pop-up").on("click", function(event) {
+    event.preventDefault();
+    
+    location.href = "http://localhost:8080";
+  })
+
 })
+
+
 

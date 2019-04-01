@@ -31,7 +31,7 @@ app.post("/api/schedule", function (req, res) {
     from: "h.a.s.bloodclinic@gmail.com",
     to: req.body.email,
     subject: "Confirmation Email",
-    html: "<h3>Your appointment is scheduled for " + moment(req.body.date).format('LL') + " at " + req.body.time + " AM! We'll be looking forward to seeing you soon. Thank you for your service!</h3><h3>Please do not reply to this message. Replies to this message are routed to an unmonitored mailbox. If you have any questions regarding your appointment, please give us a call at 1 (800)-HAS-LIFE.<h3>"
+    html: "<h3>Your appointment is scheduled for " + moment(req.body.date).format('LL') + " at " + req.body.time + " AM! We'll be looking forward to seeing you soon. Thank you for your service!</h3><p>Please do not reply to this message. Replies to this message are routed to an unmonitored mailbox. If you have any questions regarding your appointment, please give us a call at 1 (800)-HAS-LIFE.<p>"
   };
 
   transporter.sendMail(mailOptions, function (err, data) {
