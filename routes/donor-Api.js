@@ -13,7 +13,7 @@ module.exports = function(app) {
     console.log(req.body)
     db.Donor.create(req.body).then(function(dbDonor) {
       res.json(dbDonor);
-      // res.redirect('/schedule');
+      
     });
   });
 };
