@@ -17,7 +17,7 @@ $(document).ready(function () {
     $.ajax("/api/schedule", {
       type: "POST",
       data: newSchedule,
-      // success: function() { window.location.href="/"; }
+      success: function() { window.location.href="/"; }
     }).then(function (req, res) {
       console.log("created schedule!!");
     }
