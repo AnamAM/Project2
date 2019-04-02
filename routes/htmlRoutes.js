@@ -25,14 +25,16 @@ module.exports = function(app) {
   app.get("/schedule", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/schedule.html"));
   });
-  app.get("/login", function(req, res) {
 
-    res.sendFile(path.join(__dirname, "../public/login.html"));
-   
+  app.get("/help", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/help.html"));
   });
-  app.get("/admin", function(req, res) {
 
+  app.get("/login", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/login.html"));
+  });
+
+  app.get("/admin", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/admin.html"));
-   
   });
 }

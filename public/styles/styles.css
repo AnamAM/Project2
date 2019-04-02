@@ -1,6 +1,35 @@
-/* .list-group-item {
-  line-height: 2.5;
-} */
+.dropdown1{
+position: relative;
+display: inline-block;
+}
+
+.menu1{
+  display: none;
+  position: absolute;
+}
+.menu1 a:hover{
+  color: #1AAB8A
+}
+.dropdown1:hover .menu1{
+  display: block;
+  }
+
+  .dropdown2{
+    position: relative;
+    display: inline-block;
+    }
+    
+    .menu2{
+      display: none;
+      position: absolute;
+    }
+    .menu2 a:hover{
+      color: #1AAB8A
+    }
+    .dropdown2:hover .menu2{
+      display: block;
+      }
+
 
 .marketing-site-hero {
   background: url("savesHeader.jpg") top right no-repeat;
@@ -47,33 +76,25 @@
 
 .landing-page {
   background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  /* -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%); */
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* opacity: 0.50; */
   padding: 15rem 0;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   color: white;
-  /* letter-spacing: 1.5ch; */
   font-weight: bolder;
 }
 
 #about-us {
   background-image: url("https://images.unsplash.com/photo-1504151932400-72d4384f04b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
-  /* -webkit-filter: grayscale(100%);  */
-  /* filter: grayscale(100%); */
   -webkit-font-smoothing: antialiased;
   position: relative;
   width: 100vw;
   height: 50vh;
   opacity: 0.60;
-  /* min-height: 35rem; */
-  /* padding: 15rem 0; */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -111,22 +132,18 @@
   margin-bottom: 20px;
 }
 
-/* this is the police office giving blood pic, use for community help section */
-/* background-image: url("https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"); */
-
 #places {
   background-image: url("https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   position: relative;
   width: 100vw;
   height: 100vh;
-  /* opacity: 0.70; */
   min-height: 35rem;
-  padding: 15rem 0;
+  margin-bottom: 40px;
+  padding: 10rem 0;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  /* color: white; */
 }
 
 .navbar {
@@ -141,15 +158,12 @@ position: fixed;
 }
 
 #donor-info {
-   /* width: 150px; */
    position: absolute;
    margin-top: 35px;
    padding: 30px;
    padding-top: 20px;
-   /* top: 0px; */
-   /* left: 25%; */
-   margin-bottom: 20px;
-   margin-left: 37%;
+   margin-bottom: 30px;
+   margin-left: 34%;
    background-color: white;
 }
 
@@ -163,13 +177,10 @@ background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.p
 }
 
 #schedule-info {
-  /* width: 150px; */
   position: absolute;
   margin-top: 50px;
   padding: 30px;
   padding-top: 20px;
-  /* top: 0px; */
-  /* left: 25%; */
   margin-bottom: 20px;
   margin-left: 30%;
   background-color: white;
@@ -180,7 +191,7 @@ background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.p
 }
 
 #city, #email {
-  margin-left: 15%;
+  margin-left: 12%;
 }
 
 #schedule-box {
@@ -197,15 +208,10 @@ background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.p
   opacity: 0;
 }
 
-/* custom styles */
-/* body {
-  padding: 4em;
-  background: #e5e5e5;
-  font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-} */
 label {
   display: block;
 }
+
 input {
   border: 1px solid #c4c4c4;
   border-radius: 5px;
@@ -219,7 +225,6 @@ input {
 	position: absolute;
   margin-left: 50px;
   padding-bottom: 10%;
-  /* margin-top: 50px; */
 	animation:pulse 1s infinite;
 }
 
@@ -309,10 +314,12 @@ button{
   transition:800ms ease all;
   outline:none;
 }
+
 button:hover{
   background:#fff;
   color:#1AAB8A;
 }
+
 button:before,button:after{
   content:'';
   position:absolute;
@@ -323,42 +330,24 @@ button:before,button:after{
   background: #1AAB8A;
   transition:400ms ease all;
 }
+
 button:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
+
 button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
 }
 
-#help-page {
-  /* background-image: url("https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"); */
-    /* -webkit-filter: grayscale(100%);  */
-  /* filter: grayscale(100%); */
-  /* -webkit-font-smoothing: antialiased; */
-  position: relative;
-  width: 100vw;
-  height: 50vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  background-color: #0b2279;
-  font-weight: bolder;
-  margin-top: 5%;
-  color: white;
-  font-size: 30pt;
-  padding-top: 110px;
-}
-
 .modal{
   width: 90%;
+  margin-left: 7%;
 }
 
-/* working with google map api below */
 .HoustonMap{
   width: 400px;
   height: 400PX;
@@ -375,4 +364,96 @@ button:hover:before,button:hover:after{
   width: 400px;
   height: 400PX;
   margin-left: 7%
+}
+
+#help-page {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  font-weight: bolder;
+  margin-top: 5%;
+  color: #ddd;
+  font-size: 30pt;
+  padding-top: 110px;
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+
+.image1, .image2, .image3{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.image1{
+  background-image: url('https://images.unsplash.com/photo-1536856136534-bb679c52a9aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  min-height: 400px;
+}
+
+.image2{
+  background-image: url('https://images.unsplash.com/photo-1474899351970-ee05f7dd1334?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+  min-height: 400px;
+}
+
+.image3{
+  background-image: url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  min-height: 400px;
+}
+
+.section{
+  font-size: 18px;
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light{
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark{
+  background-color: #282e34;
+  color: #ddd;
+}
+
+#volunteer-form {
+  text-align: left;
+}
+
+.location-cards {
+  margin-bottom: 20px;
+}
+
+.our-team {
+  width: 100vw;
+  height: 100vh;
+}
+
+.team-pics {
+  margin-left: 13%;
+}
+
+.anam {
+  margin-left: 30px;
+}
+.skylar {
+  margin-left: 60px;
+}
+.hasanain {
+  margin-right: 20px;
 }
