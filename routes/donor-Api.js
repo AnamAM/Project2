@@ -17,11 +17,13 @@ module.exports = function(app) {
     });
   });
 
-  app.delete("/api/donor/:id", function(req, res) {
-    db.Donor.destroy({
+  app.get("/api/Donor/:id", function(req, res) {
+    
+    db.Donor.findOne({
       where: {
         id: req.params.id
-      }
+      },
+      include: [db.Post]
     }).then(function(dbDonor) {
       res.json(dbDonor);
     });
