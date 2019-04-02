@@ -23,4 +23,14 @@ $(document).ready(function () {
     }
     );
   })
+
+  $("#pop-up").on("click", function(event) {
+    event.preventDefault();
+    
+    location.href = "http://localhost:8080";
+  })
+
 })
+
+
+
